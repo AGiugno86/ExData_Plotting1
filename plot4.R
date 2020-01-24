@@ -47,8 +47,9 @@ plot(ToPlot$Sub_metering_1 ~ ToPlot$Time, type = "l",
      xlab = "", ylab = "Energy sub metering")
 lines(ToPlot$Sub_metering_2 ~ ToPlot$Time, col = "red")
 lines(ToPlot$Sub_metering_3 ~ ToPlot$Time, col = "blue")
-legend("topright", col = c("black", "red", "blue"), lwd = 1,
-       legend = c("Sub_metering_1","Sub_metering_2","Sub_metering_3"))
+legend("topright", col = c("black", "red", "blue"), lty = 1,
+       legend = c("Sub_metering_1","Sub_metering_2","Sub_metering_3"), 
+       cex = 0.9, bty = "n", inset = c(-0.05,-0.1), y.intersp = 0.3)
 #(2,2) Global reactive power vs Time
 plot(ToPlot$Global_reactive_power ~ ToPlot$Time, type = "l", 
      xlab="datetime", ylab = "Global_reactive_power")
