@@ -1,5 +1,9 @@
+#1st plot for Exploratory Data Analysis Course
+#Peer-graded Assignment: Course Project 1
+
 #This script supposes that your cwd is "~/ExData_Plotting1". If not, set it with setwd().
 library("lubridate")
+
 
 #Download the zip folder and extract the dataset
 url = "https://d396qusza40orc.cloudfront.net/exdata%2Fdata%2Fhousehold_power_consumption.zip"

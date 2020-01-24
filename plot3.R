@@ -1,3 +1,6 @@
+#3rd plot for Exploratory Data Analysis Course
+#Peer-graded Assignment: Course Project 1
+
 #This script supposes that your cwd is "~/ExData_Plotting1". If not, set it with setwd().
 library("lubridate")
 
