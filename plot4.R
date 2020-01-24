@@ -38,7 +38,7 @@ par(mfrow = c(2,2), mar = c(4,4,2,1), oma = c(0,0,2,0))
 #Plots
 #(1,1) Global Active Power vs Time
 plot(ToPlot$Global_active_power ~ ToPlot$Time, type = "l", 
-     xlab="", ylab = "Global Active Power (kilowatts)")
+     xlab="", ylab = "Global Active Power")
 #(1,2) Voltage vs Time
 plot(ToPlot$Voltage ~ ToPlot$Time, type = "l", 
      xlab="datetime", ylab = "Voltage")
