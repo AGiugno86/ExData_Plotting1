@@ -18,11 +18,13 @@ data <- read.table("household_power_consumption.txt", header = TRUE, sep = ";",
                    dec=".", stringsAsFactors=FALSE)
 data[data == "?"] <- NA   #Replace ? with NA
 
-#Convert the dates we need in proper format and subset the data we need
+#Convert the dates we need in proper format and subset the data we need, after cleaning them
 data$Date <- as.Date(strptime(data$Date, format = "%d/%m/%Y"))
+data$Global_active_power <- as.numeric(data$Global_active_power)
 ToPlot <- subset(data, 
-                     year(data$Date) == 2007 & month(data$Date) ==2 & day(data$Date) <= 2)
-ToPlot$Global_active_power <- as.numeric(ToPlot$Global_active_power)
+                 year(data$Date) == 2007 & month(data$Date) ==2 & day(data$Date) <= 2,
+                 select = c(Time, Global_active_power)
+                 )
 
 #Plot
 png(file="plot1.png", width=480, height = 480, units = "px")
