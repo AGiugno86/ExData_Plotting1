@@ -50,7 +50,7 @@ lines(ToPlot$Sub_metering_3 ~ ToPlot$Time, col = "blue")
 legend("topright", col = c("black", "red", "blue"), lwd = 1,
        legend = c("Sub_metering_1","Sub_metering_2","Sub_metering_3"))
 #(2,2) Global reactive power vs Time
-plot(ToPlot$Voltage ~ ToPlot$Time, type = "l", 
+plot(ToPlot$Global_reactive_power ~ ToPlot$Time, type = "l", 
      xlab="datetime", ylab = "Global_reactive_power")
 
 #This time we have to make the plots first and then copy them to png.
